@@ -1,11 +1,4 @@
-
-// const newMessage = {
-//     message: 'Hola Mundo',
-//     title: 'Daniel'
-// };
-// const holaNombre = (nombre) => {
-//     return `Hola ${nombre}`;
-// }
+import PropTypes from 'prop-types';
 
 const FirstApp = ( {title, subTitle} ) => {
     
@@ -17,6 +10,11 @@ const FirstApp = ( {title, subTitle} ) => {
             <p> { subTitle } </p>
         </>
     )
+}
+
+FirstApp.propTypes = {
+    title: PropTypes.string.isRequired,
+    subTitle: PropTypes.number.isRequired
 }
 
 export default FirstApp
